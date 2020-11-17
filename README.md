@@ -1,3 +1,3 @@
-## My Personal Website
+## My Website
 
 by Sebastianus Sembara
