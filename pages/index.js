@@ -48,8 +48,8 @@ export default function Home() {
             alignSelf={'center'}
             position={'relative'}>
             <Text fontSize={21}> Get in touch via email at {' '}
-              <Link href="mailto:sembara9090@gmail.com" color='blue.500' isExternal>
-                sembara9090@gmail.com
+              <Link href="mailto:hello@sembara.xyz" color='blue.500' isExternal>
+                hello@sembara.xyz
               </Link>
             </Text>
 
