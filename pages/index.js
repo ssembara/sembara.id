@@ -1,61 +1,50 @@
-import Head from 'next/head';
+import Head from 'next/head'
 import {
-  Box,
+  useColorMode,
   Heading,
-  Container,
   Text,
-  Button,
+  Flex,
   Stack,
   Link
-} from '@chakra-ui/react';
+} from '@chakra-ui/react'
 
-export default function Home() {
+import Container from '../components/Container'
+
+export default function Index() {
+  const { colorMode } = useColorMode()
+  const colorSecondary = {
+    light: 'gray.700',
+    dark: 'gray.400'
+  }
   return (
-    <>
+    <Container>
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
-          rel="stylesheet"
-        />
-        <title>Home</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Home - Benjamin Carlson</title>
       </Head>
-
-      <Container maxW={'3xl'}>
-        <Stack
-          as={Box}
-          textAlign={'center'}
-          spacing={{ base: 8, md: 14 }}
-          py={{ base: 20, md: 36 }}>
-          <Heading
-            fontWeight={600}
-            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-            lineHeight={'110%'}>
-            Hi, {' '}
-            <Text as={'span'} fontWeight={800}>
-              Sembara
-            </Text>
-            {' '}Here !
-          </Heading>
-          <Text fontSize={30}>
-            I’m a software developer based in Surabaya, Indonesia.
-            With a greatest passion on web technologies
+      <Stack
+        as="main"
+        spacing={8}
+        justifyContent="center"
+        alignItems="flex-start"
+        m="0 auto 4rem auto"
+        maxWidth="700px"
+        px={2}
+      >
+        <Flex
+          flexDirection="column"
+          justifyContent="flex-start"
+          alignItems="flex-start"
+          maxWidth="700px"
+        >
+          <Heading mb={2}>Hi, Sembara here !</Heading>
+          <Text color={colorSecondary[colorMode]}>Hello There! I am a software engineer based in Surabaya, Indonesia. With a greatest passion on web technologies like Laravel, Node, and React frameworks.</Text>
+          <Text mt={2} color={colorSecondary[colorMode]}> Get in touch via email at {' '}
+            <Link href="mailto:sembara9090@gmail.com" color='blue.500' isExternal>
+              sembara9090@gmail.com
+            </Link>
           </Text>
-          <Stack
-            direction={'column'}
-            spacing={3}
-            align={'center'}
-            alignSelf={'center'}
-            position={'relative'}>
-            <Text fontSize={21}> Get in touch via email at {' '}
-              <Link href="mailto:hello@sembara.xyz" color='blue.500' isExternal>
-                hello@sembara.xyz
-              </Link>
-            </Text>
-
-          </Stack>
-        </Stack>
-      </Container>
-    </>
-  );
+        </Flex>
+      </Stack>
+    </Container>
+  )
 }
