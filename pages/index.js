@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import {
   useColorMode,
   Heading,
@@ -8,6 +7,7 @@ import {
   Link
 } from '@chakra-ui/react'
 
+import Layout from '../components/Layout'
 import Container from '../components/Container'
 
 export default function Index() {
@@ -18,9 +18,7 @@ export default function Index() {
   }
   return (
     <Container>
-      <Head>
-        <title>Home - Sembara.XYZ</title>
-      </Head>
+      <Layout />
       <Stack
         as="main"
         spacing={8}
