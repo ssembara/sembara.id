@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-const Layout = ({twitterHandle, currentURL, previewImage, siteName, pageTitle, description}) => {
+const HeadLayout = ({twitterHandle, currentURL, previewImage, siteName, Title, pageTitle, description}) => {
     return (
         <Head>
             <meta name="twitter:card" content="summary" key="twcard" />
@@ -16,4 +16,4 @@ const Layout = ({twitterHandle, currentURL, previewImage, siteName, pageTitle, d
     );
 }
 
-export default Layout
+export default HeadLayout
