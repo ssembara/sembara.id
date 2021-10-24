@@ -7,7 +7,7 @@ import {
   Link
 } from '@chakra-ui/react'
 
-import Layout from '../components/Layout'
+import HeadLayout from '../components/HeadLayout'
 import Container from '../components/Container'
 
 export default function Index() {
@@ -18,7 +18,7 @@ export default function Index() {
   }
   return (
     <Container>
-      <Layout />
+      <HeadLayout pageTitle="Sebastianus Sembara" siteName="sembara.xyz"/>
       <Stack
         as="main"
         spacing={8}
