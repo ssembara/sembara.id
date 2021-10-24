@@ -19,7 +19,7 @@ export default function Index() {
   return (
     <Container>
       <Head>
-        <title>Home - Benjamin Carlson</title>
+        <title>Home - Sembara.XYZ</title>
       </Head>
       <Stack
         as="main"
