@@ -1,14 +1,32 @@
-import '../styles/globals.css'
+import Chakra from '../components/Chakra';
+import Fonts from '../components/Fonts';
+import Main from '../components/layouts/Main';
+import React from 'react';
+import { AnimatePresence } from 'framer-motion';
 import type { AppProps } from 'next/app'
-import { ChakraProvider } from '@chakra-ui/react'
-import NavBar from '../components/NavBar'
 
-function MyApp({ Component, pageProps }: AppProps) {
+if (typeof window !== 'undefined') {
+  window.history.scrollRestoration = 'manual'
+}
+
+function MyApp({ Component, pageProps, router }: AppProps) {
   return (
-    <ChakraProvider>
-      <NavBar/>
-      <Component {...pageProps} />
-    </ChakraProvider>
+     <Chakra cookies={pageProps.cookies}>
+      <Fonts />
+      <Main router={router} childern={undefined}>
+        <AnimatePresence
+          exitBeforeEnter
+          initial={true}
+          onExitComplete={() => {
+            if (typeof window !== 'undefined') {
+              window.scrollTo({ top: 0 })
+            }
+          }}
+        >
+          <Component {...pageProps} key={router.route} />
+        </AnimatePresence>
+      </Main>
+    </Chakra>
   )
 }
 
