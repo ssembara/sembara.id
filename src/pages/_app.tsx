@@ -1,4 +1,4 @@
-import Chakra from "../components/Chakra";
+import { Chakra } from "../components/Chakra";
 import Fonts from "../components/Fonts";
 import Main from "../components/layouts/Main";
 import React, { useEffect, useState } from "react";

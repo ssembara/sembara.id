@@ -1,27 +1,27 @@
-import Image from 'next/image';
-import NextLink from 'next/link';
-import React from 'react';
-import {
-  Box,
-  LinkBox,
-  LinkOverlay,
-  Text
-  } from '@chakra-ui/react';
-import { Global } from '@emotion/react';
+import Image from "next/image";
+import NextLink from "next/link";
+import React from "react";
+import { Box, LinkBox, LinkOverlay, Text } from "@chakra-ui/react";
+import { Global } from "@emotion/react";
 
 interface GridItemProps {
-    href: any,
-    title: string,
-    thumbnail: string
+  href: any;
+  title: string;
+  thumbnail: string;
 }
 
 interface WorkGridItem {
-    id: number,
-    title: string,
-    thumbnail: string
+  id: number;
+  title: string;
+  thumbnail: string;
 }
 
-export const GridItem: React.FC<GridItemProps> = ({ children, href, title, thumbnail }) => (
+export const GridItem: React.FC<GridItemProps> = ({
+  children,
+  href,
+  title,
+  thumbnail,
+}) => (
   <Box w="100%" textAlign="center">
     <LinkBox cursor="pointer">
       <Image
@@ -37,9 +37,14 @@ export const GridItem: React.FC<GridItemProps> = ({ children, href, title, thumb
       <Text fontSize={14}>{children}</Text>
     </LinkBox>
   </Box>
-)
+);
 
-export const WorkGridItem: React.FC<WorkGridItem> = ({ children, id, title, thumbnail }) => (
+export const WorkGridItem: React.FC<WorkGridItem> = ({
+  children,
+  id,
+  title,
+  thumbnail,
+}) => (
   <Box w="100%" textAlign="center">
     <NextLink href={`/works/${id}`} scroll={false}>
       <LinkBox cursor="pointer">
@@ -58,7 +63,7 @@ export const WorkGridItem: React.FC<WorkGridItem> = ({ children, id, title, thum
       </LinkBox>
     </NextLink>
   </Box>
-)
+);
 
 export const GridItemStyle = () => (
   <Global
@@ -68,4 +73,4 @@ export const GridItemStyle = () => (
       }
     `}
   />
-)
+);
