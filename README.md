@@ -1,0 +1,1 @@
+My Personal Website make with next.js, chakra ui and hosted with vercel
