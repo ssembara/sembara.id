@@ -1,8 +1,7 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import styled from '@emotion/styled';
-import { Text, useColorModeValue } from '@chakra-ui/react';
-import { TriangleUpIcon } from '@chakra-ui/icons';
+import Image from "next/image";
+import Link from "next/link";
+import styled from "@emotion/styled";
+import { Text, useColorModeValue } from "@chakra-ui/react";
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -21,13 +20,14 @@ const LogoBox = styled.span`
 `;
 
 const Logo = () => {
-//   const footPrintImg = `/images/footprint${useColorModeValue("", "-dark")}.png`;
+  const letterImage = `/images/logo${useColorModeValue("-dark", "")}.png`;
 
   return (
     <Link href="/" scroll={false}>
       <a>
         <LogoBox>
-          {/* <Image src={footPrintImg} width={20} height={20} alt="logo" /> */}
+          <Image src={letterImage} width={20} height={20} alt="logo" />
+          &nbsp;
           <Text
             color={useColorModeValue("gray.800", "whiteAlpha.900")}
             fontFamily='M PLUS Rounded 1c", sans-serif'

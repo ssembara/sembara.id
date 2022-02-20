@@ -2,7 +2,7 @@ import Body from "../components/layouts/Body";
 import NextLink from "next/link";
 import Paragraph from "../components/Paragraph";
 import React from "react";
-import Section from "../components/Section";
+import Section from "../components/layouts/Section";
 import { BioSection, BioYear } from "../components/layouts/Bio";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import {
@@ -15,18 +15,16 @@ import {
   Box,
   Button,
   Container,
-  GridItem,
   Heading,
   Icon,
   Image,
   Link,
   List,
   ListItem,
-  SimpleGrid,
   useColorModeValue,
 } from "@chakra-ui/react";
 
-const Home: React.FC = () => {
+const Home = () => {
   return (
     <Body title={"Home"}>
       <Container maxW="xl">
@@ -38,14 +36,14 @@ const Home: React.FC = () => {
           textAlign="center"
           bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
         >
-          Hello, I&apos;m a programmer based in Surabaya, Indonesia!
+          Henlow, My Fren ! 😍
         </Box>
         <Box display={{ md: "flex" }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
               Sebastianus Sembara
             </Heading>
-            <p>Programmer</p>
+            <p>Software Engineer</p>
           </Box>
           <Box
             flexShrink={0}
@@ -70,9 +68,20 @@ const Home: React.FC = () => {
             Work
           </Heading>
           <Paragraph>
-            Hello There! I am a software engineer based in Surabaya, Indonesia.
-            With a greatest passion on web technologies like Laravel, Node, and
-            React frameworks.
+            Hello there! I am a software engineer based in Surabaya, Indonesia.
+            With a greatest passion on web technologies like{" "}
+            <Link href="https://laravel.com/" target={"_blank"}>
+              Laravel
+            </Link>
+            {", "}
+            <Link href="https://laravel.com/" target={"_blank"}>
+              Node
+            </Link>
+            {", and "}
+            <Link href="https://laravel.com/" target={"_blank"}>
+              React
+            </Link>{" "}
+            frameworks. Check my work here!
           </Paragraph>
           <Box textAlign="center" my={4}>
             <NextLink href="/works" scroll={false}>
@@ -91,7 +100,7 @@ const Home: React.FC = () => {
             Born in Magelang, Indonesia.
           </BioSection>
           <BioSection>
-            <BioYear>2017 to Present</BioYear>
+            <BioYear>2017 to present</BioYear>
             Studied on bachelor’s degree in Technology Information on
             Information System at{" "}
             <Link href={"https://www.dinamika.ac.id/"} target={"_blank"}>
@@ -103,7 +112,9 @@ const Home: React.FC = () => {
           <Heading as="h3" variant="section-title">
             I ♥
           </Heading>
-          <Paragraph>Programming, Hiking, and You</Paragraph>
+          <Paragraph>
+            Programming, Hiking, Movie, Games, and Coffee ☕
+          </Paragraph>
         </Section>
         <Section>
           <Heading as="h3" variant="section-title">

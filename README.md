@@ -1,1 +1,3 @@
-My Personal Website make with next.js, chakra ui and hosted with vercel
+# sembara.xyz
+
+😱🥵🥶😳 | Sembara's personal website. Make with Next.js, Chakra UI and hosted with Vercel

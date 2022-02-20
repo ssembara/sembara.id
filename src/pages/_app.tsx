@@ -1,7 +1,7 @@
-import Chakra from "../components/Chakra";
+import { Chakra } from "../components/Chakra";
 import Fonts from "../components/Fonts";
 import Main from "../components/layouts/Main";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import type { AppProps } from "next/app";
 
@@ -9,12 +9,18 @@ if (typeof window !== "undefined") {
   window.history.scrollRestoration = "manual";
 }
 
-const useEnhancedEffect =
-  typeof window !== "undefined" ? React.useLayoutEffect : React.useEffect;
-
 function MyApp(props: AppProps) {
   const { Component, pageProps, router } = props;
-  useEnhancedEffect(() => {});
+  const [isLoaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
+
+  if (!isLoaded) {
+    return <></>;
+  }
+
   return (
     <Chakra cookies={pageProps.cookies}>
       <Fonts />

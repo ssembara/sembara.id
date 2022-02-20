@@ -8,8 +8,9 @@ const Footer = () => {
         href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
         target={"_blank"}
       >
-        CC BY-NC-SA 4.0.
-      </Link>{" "}
+        CC BY-NC-SA 4.0
+      </Link>
+      {". "}
       Made using{" "}
       <Link href="https://nextjs.org/" target={"_blank"}>
         Next.js
@@ -17,15 +18,16 @@ const Footer = () => {
       and{" "}
       <Link href="https://chakra-ui.com/" target={"_blank"}>
         Chakra UI
-      </Link>{" "}
-      . Hosted on{" "}
+      </Link>
+      {". "}
+      Hosted on{" "}
       <Link href="https://vercel.com/" target={"_blank"}>
         Vercel
-      </Link>{" "}
-      .{" "}
+      </Link>
+      {". "}
       <Box>
         &copy; {new Date().getFullYear()} Sebastianus Sembara. All Rights
-        Reserved. Version 2
+        Reserved. Version 2.0
       </Box>
     </Box>
   );
