@@ -103,7 +103,7 @@ const Home: React.FC = () => {
           <Heading as="h3" variant="section-title">
             I ♥
           </Heading>
-          <Paragraph>Programming, Hiking</Paragraph>
+          <Paragraph>Programming, Hiking, and You</Paragraph>
         </Section>
         <Section>
           <Heading as="h3" variant="section-title">
