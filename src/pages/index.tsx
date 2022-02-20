@@ -15,19 +15,16 @@ import {
   Box,
   Button,
   Container,
-  GridItem,
   Heading,
   Icon,
   Image,
   Link,
   List,
   ListItem,
-  SimpleGrid,
-  Text,
   useColorModeValue,
 } from "@chakra-ui/react";
 
-const Home: React.FC = () => {
+const Home = () => {
   return (
     <Body title={"Home"}>
       <Container maxW="xl">

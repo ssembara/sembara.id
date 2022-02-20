@@ -1,7 +1,7 @@
 import { Box, Container, useColorModeValue } from "@chakra-ui/react";
 import Body from "../components/layouts/Body";
 
-const About: React.FC = () => {
+const About = () => {
   return (
     <Body title="About">
       <Container maxW={"xl"}>
