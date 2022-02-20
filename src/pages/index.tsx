@@ -6,22 +6,33 @@ import Section from "../components/Section";
 import { BioSection, BioYear } from "../components/layouts/Bio";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import {
+  IoLogoGithub,
+  IoLogoInstagram,
+  IoLogoTwitter,
+  IoMail,
+} from "react-icons/io5";
+import {
   Box,
   Button,
   Container,
+  GridItem,
   Heading,
+  Icon,
   Image,
   Link,
+  List,
+  ListItem,
+  SimpleGrid,
   useColorModeValue,
 } from "@chakra-ui/react";
 
 const Home: React.FC = () => {
   return (
-    <Body title={""}>
+    <Body title={"Home"}>
       <Container maxW="xl">
         <Box
           borderRadius="lg"
-          mt={36}
+          mt={6}
           mb={6}
           p={3}
           textAlign="center"
@@ -87,6 +98,63 @@ const Home: React.FC = () => {
               Universitas Dinamika
             </Link>
           </BioSection>
+        </Section>
+        <Section>
+          <Heading as="h3" variant="section-title">
+            I ♥
+          </Heading>
+          <Paragraph>Programming, Hiking</Paragraph>
+        </Section>
+        <Section>
+          <Heading as="h3" variant="section-title">
+            Touch me
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="mailto:sembara9090@gmail.com" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoMail} />}
+                >
+                  sembara9090@gmail.com
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://github.com/ssembara" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @ssembara
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://twitter.com/ssembara99" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoTwitter} />}
+                >
+                  @ssembara99
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://instagram.com/ssembara" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoInstagram} />}
+                >
+                  @ssembara
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Body>
