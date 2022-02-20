@@ -9,8 +9,12 @@ if (typeof window !== "undefined") {
   window.history.scrollRestoration = "manual";
 }
 
+const useEnhancedEffect =
+  typeof window !== "undefined" ? React.useLayoutEffect : React.useEffect;
+
 function MyApp(props: AppProps) {
   const { Component, pageProps, router } = props;
+  useEnhancedEffect(() => {});
   return (
     <Chakra cookies={pageProps.cookies}>
       <Fonts />
