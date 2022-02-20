@@ -1,19 +1,25 @@
-import { Box, Container, useColorModeValue } from "@chakra-ui/react";
 import Body from "../components/layouts/Body";
+import NextLink from "next/link";
+import {
+  Box,
+  Button,
+  Container,
+  Divider,
+  Heading,
+  Text,
+} from "@chakra-ui/react";
 
 const Work = () => {
   return (
-    <Body title="About">
+    <Body title="Work">
       <Container maxW={"xl"}>
-        <Box
-          borderRadius="lg"
-          mt={6}
-          mb={6}
-          p={3}
-          textAlign="center"
-          bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
-        >
-          Page under construction
+        <Heading as="h1">Sorry</Heading>
+        <Text>The page you&apos;re looking for was under construction.</Text>
+        <Divider my={6} />
+        <Box my={6} textAlign="center">
+          <NextLink href="/">
+            <Button colorScheme="teal">Return to home</Button>
+          </NextLink>
         </Box>
       </Container>
     </Body>

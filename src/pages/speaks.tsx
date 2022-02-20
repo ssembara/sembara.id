@@ -9,9 +9,9 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-const About = () => {
+const Speak = () => {
   return (
-    <Body title="About">
+    <Body title="Speak">
       <Container maxW={"xl"}>
         <Heading as="h1">Sorry</Heading>
         <Text>The page you&apos;re looking for was under construction.</Text>
@@ -26,4 +26,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Speak;
