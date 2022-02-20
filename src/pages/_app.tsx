@@ -1,25 +1,26 @@
-import Chakra from '../components/Chakra';
-import Fonts from '../components/Fonts';
-import Main from '../components/layouts/Main';
-import React from 'react';
-import { AnimatePresence } from 'framer-motion';
-import type { AppProps } from 'next/app'
+import Chakra from "../components/Chakra";
+import Fonts from "../components/Fonts";
+import Main from "../components/layouts/Main";
+import React from "react";
+import { AnimatePresence } from "framer-motion";
+import type { AppProps } from "next/app";
 
-if (typeof window !== 'undefined') {
-  window.history.scrollRestoration = 'manual'
+if (typeof window !== "undefined") {
+  window.history.scrollRestoration = "manual";
 }
 
-function MyApp({ Component, pageProps, router }: AppProps) {
+function MyApp(props: AppProps) {
+  const { Component, pageProps, router } = props;
   return (
-     <Chakra cookies={pageProps.cookies}>
+    <Chakra cookies={pageProps.cookies}>
       <Fonts />
-      <Main router={router} childern={undefined}>
+      <Main router={router}>
         <AnimatePresence
           exitBeforeEnter
           initial={true}
           onExitComplete={() => {
-            if (typeof window !== 'undefined') {
-              window.scrollTo({ top: 0 })
+            if (typeof window !== "undefined") {
+              window.scrollTo({ top: 0 });
             }
           }}
         >
@@ -27,7 +28,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
         </AnimatePresence>
       </Main>
     </Chakra>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
