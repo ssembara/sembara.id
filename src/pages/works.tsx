@@ -1,26 +1,12 @@
 import Body from "../components/layouts/Body";
-import NextLink from "next/link";
-import {
-  Box,
-  Button,
-  Container,
-  Divider,
-  Heading,
-  Text,
-} from "@chakra-ui/react";
+import UnderConstruction from "../components/UnderConstruction";
+import { Container } from "@chakra-ui/react";
 
 const Work = () => {
   return (
     <Body title="Work">
       <Container maxW={"xl"}>
-        <Heading as="h1">Sorry</Heading>
-        <Text>The page you&apos;re looking for was under construction.</Text>
-        <Divider my={6} />
-        <Box my={6} textAlign="center">
-          <NextLink href="/">
-            <Button colorScheme="teal">Return to home</Button>
-          </NextLink>
-        </Box>
+        <UnderConstruction />
       </Container>
     </Body>
   );
