@@ -100,12 +100,20 @@ const Home = () => {
             Born in Magelang, Indonesia.
           </BioSection>
           <BioSection>
-            <BioYear>2017 to present</BioYear>
-            Studied on bachelor’s degree in Technology Information on
+            <BioYear>2022</BioYear>
+            Completed the Bachelor’s Degree in Technology Information on
             Information System at{" "}
             <Link href={"https://www.dinamika.ac.id/"} target={"_blank"}>
               Universitas Dinamika
             </Link>
+          </BioSection>
+          <BioSection>
+            <BioYear>2022</BioYear>
+            Worked at{" "}
+            <Link href={"https://www.gocement.com/"} target={"_blank"}>
+              Gocement
+            </Link>{" "}
+            as Back-End Developer
           </BioSection>
         </Section>
         <Section>
