@@ -141,35 +141,35 @@ const Home = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://github.com/ssembara" target="_blank">
+              <Link href="https://github.com/baralogi" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<Icon as={IoLogoGithub} />}
                 >
-                  @ssembara
+                  @baralogi
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://twitter.com/ssembara99" target="_blank">
+              <Link href="https://twitter.com/baralogi" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<Icon as={IoLogoTwitter} />}
                 >
-                  @ssembara99
+                  @baralogi
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://instagram.com/ssembara" target="_blank">
+              <Link href="https://instagram.com/baralogi" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<Icon as={IoLogoInstagram} />}
                 >
-                  @ssembara
+                  @baralogi
                 </Button>
               </Link>
             </ListItem>
