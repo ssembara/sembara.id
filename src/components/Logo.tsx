@@ -24,20 +24,18 @@ const Logo = () => {
 
   return (
     <Link href="/" scroll={false}>
-      <a>
-        <LogoBox>
-          <Image src={letterImage} width={20} height={20} alt="logo" />
-          &nbsp;
-          <Text
-            color={useColorModeValue("gray.800", "whiteAlpha.900")}
-            fontFamily='M PLUS Rounded 1c", sans-serif'
-            fontWeight="bold"
-            ml={3}
-          >
-            Sebastianus Sembara
-          </Text>
-        </LogoBox>
-      </a>
+      <LogoBox>
+        <Image src={letterImage} width={20} height={20} alt="logo" />
+        &nbsp;
+        <Text
+          color={useColorModeValue("gray.800", "whiteAlpha.900")}
+          fontFamily='M PLUS Rounded 1c", sans-serif'
+          fontWeight="bold"
+          ml={3}
+        >
+          Sebastianus Sembara
+        </Text>
+      </LogoBox>
     </Link>
   );
 };
