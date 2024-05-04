@@ -26,7 +26,7 @@ function MyApp(props: AppProps) {
       <Fonts />
       <Main router={router}>
         <AnimatePresence
-          exitBeforeEnter
+          mode="wait"
           initial={true}
           onExitComplete={() => {
             if (typeof window !== "undefined") {
