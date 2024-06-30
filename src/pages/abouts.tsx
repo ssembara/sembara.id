@@ -24,9 +24,9 @@ const About = () => {
         </Box>
         <Text textAlign="justify">
           because Sebastianus Sembara is too long, you can call me Bara. Born in
-          Magelang, Indonesia. Raised and currently living in Surabaya,
-          Indonesia. Currently studied on bachelor&apos;s degree in Technology
-          Information on Information System at{" "}
+          Magelang, Indonesia. and now live in <strong>Bali</strong>, Indonesia.
+          A bachelor&apos;s degree graduate from Technology Information on
+          Information System at{" "}
           <Link href="https://www.dinamika.ac.id/" target={"_blank"}>
             Universitas Dinamika
           </Link>
@@ -50,25 +50,23 @@ const About = () => {
           <Heading as="h1">Skills</Heading>
           <HStack mt={4} spacing={8} align={"flex-start"}>
             <VStack align={"flex-start"}>
-              <Text>HTML</Text>
+              <Text>HTML5</Text>
               <Text>CSS3</Text>
               <Text>Boostrap</Text>
-              <Text>React</Text>
+              <Text>Next</Text>
             </VStack>
             <VStack align={"flex-start"}>
-              <Text>Java</Text>
+              <Text>Java Spring</Text>
+              <Text>PHP Laravel</Text>
               <Text>NodeJS</Text>
-              <Text>Laravel</Text>
+              <Text>Docker</Text>
+            </VStack>
+            <VStack align={"flex-start"}>
               <Text>MariaDB/ MySQL</Text>
+              <Text>PostgreSQL</Text>
               <Text>MongoDB</Text>
               <Text>Redis</Text>
               <Text>Firebase</Text>
-            </VStack>
-            <VStack align={"flex-start"}>
-              <Text>Smartgit</Text>
-              <Text>DBeaver</Text>
-              <Text>Visual Studio Code</Text>
-              <Text>Postman</Text>
             </VStack>
           </HStack>
         </Box>
