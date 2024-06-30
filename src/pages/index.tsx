@@ -68,8 +68,8 @@ const Home = () => {
             Work
           </Heading>
           <Paragraph>
-            Hello there! I am a software engineer based in Surabaya, Indonesia.
-            With a greatest passion on web technologies like{" "}
+            Hello there! I am a software engineer based in Bali, Indonesia. With
+            a greatest passion on web technologies like{" "}
             <Link href="https://laravel.com/" target={"_blank"}>
               Laravel
             </Link>
@@ -115,13 +115,24 @@ const Home = () => {
             </Link>{" "}
             as Back-End Developer
           </BioSection>
+          <BioSection>
+            <BioYear>2024</BioYear>
+            Moved to Bali, and start worked at{" "}
+            <Link href={"https://www.bonofactum.com/"} target={"_blank"}>
+              Bonofactum
+            </Link>{" "}
+            as PHP Developer, part of the German jewelry group{" "}
+            <Link href={"https://www.julie-grace.de/"} target={"_blank"}>
+              JULIE & GRACE
+            </Link>
+          </BioSection>
         </Section>
         <Section>
           <Heading as="h3" variant="section-title">
             I ♥
           </Heading>
           <Paragraph>
-            Programming, Hiking, Movie, Games, and Coffee ☕
+            Programming, Hiking, Fishing, Movie, Games, and Coffee ☕
           </Paragraph>
         </Section>
         <Section>
