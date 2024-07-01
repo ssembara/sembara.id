@@ -15,7 +15,7 @@ const MotionBox = chakra(motion.div, {
 });
 
 interface SectionProps {
-  childern?: ReactNode;
+  children?: ReactNode;
 }
 
 const Section: React.FC<SectionProps> = ({ children }) => (

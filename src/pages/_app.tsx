@@ -1,6 +1,6 @@
-import { Chakra } from "../components/Chakra";
-import Fonts from "../components/Fonts";
-import Main from "../components/layouts/Main";
+import { Chakra } from "../app/components/Chakra";
+import Fonts from "../app/components/Fonts";
+import Main from "../app/components/layouts/Main";
 import React, { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import type { AppProps } from "next/app";

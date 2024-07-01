@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 interface LayoutProps {
   title: string;
+  children: React.ReactNode;
 }
 
 const variants = {
